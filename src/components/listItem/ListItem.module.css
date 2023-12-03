@@ -1,0 +1,32 @@
+.listItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+.listItemRightPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.doneChekbox {
+  width: 20px;
+  height: 20px;
+}
+.taskTitle {
+  color: black;
+  font-size: 24px;
+}
+.deleteBtn {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 50px;
+  color: black;
+  font-weight: bold;
+  padding: 2px 5px;
+}
