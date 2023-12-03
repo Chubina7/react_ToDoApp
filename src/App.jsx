@@ -1,22 +1,13 @@
-import './App.css';
+import "./App.css";
+import ListContainer from "./components/listContainer/ListContainer";
+import SearchBar from "./components/searchBar/SearchBar";
 
 export default function App() {
   return (
-    <div className="app">
-      <h1>My Tasks</h1>
-      <input type="text" placeholder='test' />
-      <button>Add Task</button>
-
-      <div>
-        <ul>
-          <li>
-            <input type="checkbox" name="done" />
-            <p>Task Name</p>
-            <button>X</button>
-          </li>
-        </ul>
-      </div>
-
+    <div className="mainContainer">
+      <h1 className="heading">My Tasks</h1>
+      <SearchBar />
+      <ListContainer />
     </div>
   );
 }
