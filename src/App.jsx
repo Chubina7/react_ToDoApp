@@ -7,7 +7,6 @@ export default function App() {
     <div className="mainContainer">
       <h1 className="heading">My Tasks</h1>
       <SearchBar />
-      <ListContainer />
     </div>
   );
 }
