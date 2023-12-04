@@ -1,5 +1,6 @@
 .listItem {
   width: 100%;
+  height: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,6 +13,7 @@
 }
 .listItemRightPart {
   display: flex;
+  height: fit-content;
   justify-content: center;
   align-items: center;
   gap: 20px;
