@@ -9,12 +9,16 @@ export default function ListItem(props) {
   };
 
   return (
-    <li className={styles.listItem}>
+    <li className={styles.listItem} onClick={doneHandle}>
       <div className={styles.listItemRightPart}>
         <input type="checkbox" name="done" className={styles.doneChekbox} />
-        <p className={`${styles.taskTitle} ${done && styles.checked}`}>{props.title}</p>
+        <p className={`${styles.taskTitle} ${done && styles.checked}`}>
+          {props.title}
+        </p>
       </div>
-      <button className={styles.deleteBtn} onClick={doneHandle}>X</button>
+      <button className={styles.deleteBtn} onClick={props.onDeleteClick}>
+        X
+      </button>
     </li>
   );
 }
