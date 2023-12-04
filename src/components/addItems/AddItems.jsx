@@ -1,7 +1,6 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import styles from "./AddItems.module.css";
-import ListItem from "../listItem/ListItem";
 import ListContainer from "../listContaiener/ListContainer";
 
 export default function AddItems() {
@@ -16,10 +15,15 @@ export default function AddItems() {
       setValue("");
     }
   };
-
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      addTask();
+    }
+  };
   const deleteTask = () => {
     console.log("deleted");
   };
+  
 
   return (
     <>
@@ -30,12 +34,13 @@ export default function AddItems() {
           placeholder="Add task"
           value={value}
           onChange={changeHandler}
+          onKeyDown={handleKeyPress}
         />
         <button className={styles.inputBtn} onClick={addTask}>
           Add Task
         </button>
       </div>
-      <ListContainer tasks={tasks} onDeleteClick={deleteTask}/>
+      <ListContainer tasks={tasks} onDeleteClick={deleteTask} />
     </>
   );
 }
