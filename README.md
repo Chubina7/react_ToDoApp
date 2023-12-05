@@ -5,8 +5,10 @@
 * Mark task as done
 * Input using onScreenButton or ENTER button on the keyboard
 * Responsive design
+### `Should Be added:`
+* Data saving system in the local storage
 
-
+`_________________________________________________________________________________________________`
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
