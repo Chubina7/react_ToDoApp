@@ -1,3 +1,12 @@
+## The first project using REACT Library.
+### App fetures:
+* Add task
+* Delete task
+* Mark task as done
+* Input using onScreenButton or ENTER button on the keyboard
+* Responsive design
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
