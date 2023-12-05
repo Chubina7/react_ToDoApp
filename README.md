@@ -1,5 +1,5 @@
 ## The first project using REACT Library.
-### App fetures:
+### `App fetures:`
 * Add task
 * Delete task
 * Mark task as done
