@@ -20,10 +20,10 @@ export default function AddItems() {
       addTask();
     }
   };
-  const deleteTask = () => {
-    console.log("deleted");
+  const deleteTask = (index) => {
+    const changedTasks = tasks.filter((_, i) => i !== index);
+    setTasks(changedTasks);
   };
-  
 
   return (
     <>
