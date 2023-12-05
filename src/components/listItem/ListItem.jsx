@@ -9,10 +9,18 @@ export default function ListItem(props) {
   };
 
   return (
-    <li className={styles.listItem} onClick={doneHandle}>
+    <li className={styles.listItem}>
       <div className={styles.listItemRightPart}>
-        <input type="checkbox" name="done" className={styles.doneChekbox} />
-        <p className={`${styles.taskTitle} ${done && styles.checked}`}>
+        <input
+          type="checkbox"
+          name="done"
+          className={styles.doneChekbox}
+          onClick={doneHandle}
+        />
+        <p
+          className={`${styles.taskTitle} ${done && styles.checked}`}
+          onClick={doneHandle}
+        >
           {props.title}
         </p>
       </div>
