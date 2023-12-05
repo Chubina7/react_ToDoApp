@@ -11,7 +11,13 @@ export default function ListContainer(props) {
             task.split("")[0].toUpperCase() +
             task.split("").slice(1, task.lenght).join("");
 
-          return <ListItem title={title} key={index} onDeleteClick={props.onDeleteClick} />;
+          return (
+            <ListItem
+              title={title}
+              key={index}
+              onDeleteClick={() => props.onDeleteClick(index)}
+            />
+          );
         })}
       </ul>
     </div>

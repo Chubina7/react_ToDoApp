@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import styles from "./AddItems.module.css";
 import ListContainer from "../listContaiener/ListContainer";
 
@@ -20,10 +20,10 @@ export default function AddItems() {
       addTask();
     }
   };
-  const deleteTask = () => {
-    console.log("deleted");
+  const deleteTask = (index) => {
+    const changedTasks = tasks.filter((_, i) => i !== index);
+    setTasks(changedTasks);
   };
-  
 
   return (
     <>
